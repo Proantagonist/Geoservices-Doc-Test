@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="https://geoservices.tamu.edu/api/5.0"></script>
+    
+    <script>
+      // Create a geocoder instance
+      let geocoder = Geocoder({
+        version: '5',
+        apiKey: 'YOUR_API_KEY_HERE',
+        streetAddress: '9355 Burton Way'
+      });
+      
+      // Execute geocode, return result as observable.
+      geocoder.execute().subscribe((result) => {
+        // Access result here.
+      });
+      
+      // Execute geocode, return result as promise.
+      geocoder.execute(true).then((result) => {
+        // Access result here.
+      });
+
+      // Execute geocode, access result in callback
+      geocoder.execute((error, result) => {
+        if(err){
+        // Handle error here
+        }
+        
+        // Access result here.
+      })
+    </script>
+  </head>
+  
+  <body>
+     <!--- Application goes here --->
+  </body
+</html>
