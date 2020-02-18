@@ -1,7 +1,7 @@
 <html>
   <head>
     <script>
-      const resource = 'https://geoservices.tamu.edu/Services/Geocode/WebService/GeocoderWebServiceHttpNonParsedAdvanced_V04_01.aspx'
+      const resource = 'https://geoservices.tamu.edu/Services/Geocode/WebService/GeocoderWebServiceHttpNonParsedAdvanced_V04_01.aspx';
       const apiKey = 'YOUR_API_KEY_HERE';
       const version = '4.01';
       const streetAddress = '9355 Burton Way';
@@ -20,7 +20,7 @@
                   + '&format=' + format
       
       fetch(url)
-        .then(function(result){
+      .then(function(result){
         return result.json();
       })
       .then(function(json){
