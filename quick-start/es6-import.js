@@ -10,6 +10,10 @@ const geocoder = new Geocoder({
   zip: 99210
 });
 
+//
+// THREE WAYS TO CONSUME RESULT
+//
+
 // Observable-based
 geocoder.execute()
 .subscribe((result) => {
