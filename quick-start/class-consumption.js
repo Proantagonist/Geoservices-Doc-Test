@@ -13,23 +13,23 @@ const geocode = new Geocoder({
 
 // Observable
 geocode.execute()
-.subscribe((result) => {
+.subscribe(function(result) {
   // Receive successful result here
-}, (err) => {
+}, function(err) {
   // Handle XHR and non-success API error codes here
 });
 
 // Promise
 geocode.execute(true)
-.then((result) => {
+.then(function(result) {
   // Receive successful result here
 })
-.catch((err) => {
+.catch(function(err) {
   // Handle XHR and non-success API error codes here
 });
 
 // Node-style callback
-geocode.execute(function(err, result){
+geocode.execute(function(err, result) {
   if(err){
     // Handle XHR and non-success API error codes here
   }
