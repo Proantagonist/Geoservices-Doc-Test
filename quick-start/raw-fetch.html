@@ -19,8 +19,12 @@
                   + '&zip=' + zip
                   + '&format=' + format
       
-      fetch(url).then(function(result){
-        // Access result here.
+      fetch(url)
+        .then(function(result){
+        return result.json();
+      })
+      .then(function(json){
+        // JSON accessible here
       })
       .catch(function(err){
         // Access error, if any, here
