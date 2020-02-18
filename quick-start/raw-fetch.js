@@ -7,7 +7,7 @@ const state = 'ca';
 const zip = '99210';
 const format = 'json';
 
-const url = resource,
+const url = resource
           + '?'
           + '&apiKey=' + apiKey
           + '&version=' + version
