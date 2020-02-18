@@ -25,7 +25,7 @@ fetch(url)
    // Handle payload
   if(json.statusCode === 200){
     console.log('Payload', json) ;
-  } else (){
+  } else {
     // Handle any other non-success API status codes
     console.log('Not a success', json);
   }
