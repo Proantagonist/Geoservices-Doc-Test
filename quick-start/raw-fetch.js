@@ -18,18 +18,19 @@ const url = resource,
           + '&format=' + format
 
 fetch(url)
-.then(function(result){
-  return result.json();
-})
-.then(function(json){
-   // Handle payload
-  if(json.statusCode === 200){
-    console.log('Payload', json) ;
-  } else {
-    // Handle any other non-success API status codes
-    console.log('Not a success', json);
-  }
-})
-.catch(function(err){
-// Access request error here, if any.
-});
+  .then(function(result){
+    return result.json();
+  })
+  .then(function(json){
+    // Handle payload
+    if(json.statusCode === 200){
+      console.log('Payload', json) ;
+    } else {
+      // Handle any other non-success API status codes
+      console.log('Not a success', json);
+    }
+  })
+  .catch(function(err){
+    // Access request error here, if any.
+    console.log(err);
+  });
