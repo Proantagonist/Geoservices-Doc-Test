@@ -31,7 +31,7 @@ geocoder.execute(true)
   // Handle XHR and non-success API error codes here
 });
 
-// Callback
+// Node-style callback
 geocoder.execute(function(err, result){
   if(err){
     // Handle XHR and non-success API error codes here
