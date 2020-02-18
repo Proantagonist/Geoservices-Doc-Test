@@ -19,11 +19,17 @@ const url = resource,
 
 fetch(url)
 .then(function(result){
-return result.json();
+  return result.json();
 })
 .then(function(json){
-// JSON accessible here
+   // Handle payload
+  if(json.statusCode === 200){
+    console.log('Payload', json) ;
+  } else (){
+    // Handle any other non-success API status codes
+    console.log('Not a success', json);
+  }
 })
 .catch(function(err){
-// Access error, if any, here
+// Access request error here, if any.
 });
