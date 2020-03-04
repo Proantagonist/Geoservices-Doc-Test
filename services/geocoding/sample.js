@@ -1,3 +1,5 @@
+// Using our first-party JavaScript client library
+
 const geocode = new Geocoder({
   apiKey: 'demo',
   version: '4.01',
@@ -6,3 +8,5 @@ const geocode = new Geocoder({
   state: 'ca',
   zip: 99210
 });
+
+// Click on the green arrow to execute the geocode
