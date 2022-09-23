@@ -1,2 +1,2 @@
 // Import the Geocoder class from the module
-const { Geocoder } = require('@tamu-gisc/common/utils/geometry/geoprocessing');
+const { Geocode } = require("@tamu-gisc/geoprocessing-v5");

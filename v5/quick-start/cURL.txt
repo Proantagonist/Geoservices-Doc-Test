@@ -1,7 +1,7 @@
 
-curl https://geoservices.tamu.edu/Services/Geocode/WebService/GeocoderWebServiceHttpNonParsedAdvanced_V04_01.aspx \
+curl https://geoservices.tamu.edu/api/geocode/v5 \
   -d apiKey=demo \
-	-d version=4.01 \
+	-d version=5.0 \
 	-d streetAddress='9355 Burton Way' \
  	-d city='Beverly Hills' \
 	-d state=ca \

@@ -1,0 +1,22 @@
+{
+  "name": "geoservices-docs",
+  "version": "1.0.0",
+  "description": "Documentation for first-party HTTP wrapper for TAMU Geoservices geoprocessing API's",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Proantagonist/Geoservices-Doc-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Proantagonist/Geoservices-Doc-Test/issues"
+  },
+  "homepage": "https://github.com/Proantagonist/Geoservices-Doc-Test#readme",
+  "dependencies": {
+    "@tamu-gisc/geoprocessing-v5": "^0.0.1-alpha.2"
+  },
+  "type": "module"
+}

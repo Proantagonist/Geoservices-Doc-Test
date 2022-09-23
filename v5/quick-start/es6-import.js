@@ -1,2 +1,2 @@
 // Import the Geocoder class from the module
-import { Geocoder } from '@tamu-gisc/common/utils/geometry/geoprocessing';
+import { Geocode } from "@tamu-gisc/geoprocessing-v5";

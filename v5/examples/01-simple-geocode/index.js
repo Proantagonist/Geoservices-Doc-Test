@@ -11,42 +11,29 @@ const geocode = new Geocode({
   refs: ["MicrosoftFootprints"],
 });
 
-//
-// Consume
-//
-
-//
-// Promise
-//
 geocode
   .asPromise()
   .then((res) => {
-    // Receive successful result here
+    console.log("Promise finished");
   })
   .catch((err) => {
-    // Handle XHR and non-success API error codes here
+    console.log("Promise finished with error");
   });
 
-//
-// Observable
-//
 geocode.asObservable().subscribe({
   next: (res) => {
-    // Receive successful result here);
+    console.log("Observable finished");
   },
   error: (err) => {
-    // Handle XHR and non-success API error codes here
+    console.log("Observable finished with error");
   },
 });
 
-//
-// Callback
-//
-geocode.asCallback((err, res) => {
+geocode.asCallback((err, data) => {
   if (err) {
-    // Handle XHR and non-success API error codes here
+    console.log("Callback finished with error");
     return;
   }
 
-  // Receive successful result here
+  console.log("Callback finished");
 });
