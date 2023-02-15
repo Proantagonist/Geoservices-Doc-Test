@@ -1,4 +1,4 @@
-curl -XGET 'https://geoservices.tamu.edu/Api/ReverseGeocoding/V5/' \
+curl -XGET 'https://geoservices.tamu.edu/api/reversegeocoding/v5/' \
   -d "format=json" \
   -d "version=5.0" \
   -d "apiKey=YOUR_API_KEY" \
