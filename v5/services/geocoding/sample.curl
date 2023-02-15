@@ -1,0 +1,11 @@
+curl -XGET 'https://geoservices.tamu.edu/api/geocode/v5/' \
+  -d "version=5.0" \
+  -d "format=json" \
+  -d "censusYears=allAvailable" \
+  -d "refs=MicrosoftFootprints" \
+  -d "apiKey=demo" \
+  -d "streetAddress=1207+Winding+Road" \
+  -d "city=College+Station" \
+  -d "state=TX" \
+  -d "zip=77840" \
+  -d "census=true"
