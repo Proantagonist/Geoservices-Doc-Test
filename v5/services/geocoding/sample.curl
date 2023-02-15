@@ -3,7 +3,7 @@ curl -XGET 'https://geoservices.tamu.edu/api/geocode/v5/' \
   -d "format=json" \
   -d "censusYears=allAvailable" \
   -d "refs=MicrosoftFootprints" \
-  -d "apiKey=demo" \
+  -d "apiKey=YOUR_API_KEY" \
   -d "streetAddress=1207+Winding+Road" \
   -d "city=College+Station" \
   -d "state=TX" \
