@@ -1,4 +1,4 @@
-curl -XGET 'https://geoservices.tamu.edu/Api/CensusIntersection/V5/' \
+curl -XGET 'https://geoservices.tamu.edu/api/censusintersection/v5/' \
   -d "format=json" \
   -d "version=5.0" \
   -d "censusYears=allAvailable" \
