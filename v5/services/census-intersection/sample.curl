@@ -1,0 +1,8 @@
+curl -XGET 'https://geoservices.tamu.edu/Api/CensusIntersection/V5/' \
+  -d "format=json" \
+  -d "version=5.0" \
+  -d "censusYears=allAvailable" \
+  -d "apiKey=YOUR_API_KEY" \
+  -d "lat=34.0726207996348" \
+  -d "lon=-118.39796518207" \
+  -d "s=CA"
