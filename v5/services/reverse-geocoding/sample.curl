@@ -1,0 +1,6 @@
+curl -XGET 'https://geoservices.tamu.edu/Api/ReverseGeocoding/V5/' \
+  -d "format=json" \
+  -d "version=5.0" \
+  -d "apiKey=YOUR_API_KEY" \
+  -d "latitude=30.610487" \
+  -d "longitude=-96.327766"
