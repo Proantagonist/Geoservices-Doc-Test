@@ -1,0 +1,9 @@
+curl -XGET 'https://geoservices.tamu.edu/api/addressnormalization/v5/' \
+  -d "responseFormat=json" \
+  -d "version=5.0" \
+  -d "addressFormat=USPSPublication28" \
+  -d "apiKey=YOUR_API_KEY" \
+  -d "nonParsedStreetAddress=123+Old+US+HWY+25" \
+  -d "nonParsedStreetCity=Los+Angeles" \
+  -d "nonParsedStreetState=California" \
+  -d "nonParsedStreetZIP=900890255"
